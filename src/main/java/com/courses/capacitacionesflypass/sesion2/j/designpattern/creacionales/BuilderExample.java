@@ -1,27 +1,13 @@
 package com.courses.capacitacionesflypass.sesion2.j.designpattern.creacionales;
 
-// Producto
+import lombok.Setter;
+
+@Setter
 class House {
     private String foundation;
     private String structure;
     private String roof;
     private String interior;
-
-    public void setFoundation(String foundation) {
-        this.foundation = foundation;
-    }
-
-    public void setStructure(String structure) {
-        this.structure = structure;
-    }
-
-    public void setRoof(String roof) {
-        this.roof = roof;
-    }
-
-    public void setInterior(String interior) {
-        this.interior = interior;
-    }
 
     @Override
     public String toString() {
@@ -82,6 +68,7 @@ class ConcreteHouseBuilder extends HouseBuilder {
 
 // Director
 class ConstructionEngineer {
+
     private HouseBuilder houseBuilder;
 
     public ConstructionEngineer(HouseBuilder houseBuilder) {

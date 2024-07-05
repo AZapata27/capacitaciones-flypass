@@ -1,5 +1,6 @@
 package com.courses.capacitacionesflypass.sesion2.g.generic.boundedtype;
 
+
 interface Shape {
     double area();
 }
@@ -7,6 +8,12 @@ interface Shape {
 interface Colored {
     String getColor();
 }
+
+
+
+
+
+
 
 public class BoundedExample<T extends Shape & Colored> {
     private T item;
@@ -21,6 +28,7 @@ public class BoundedExample<T extends Shape & Colored> {
     }
 
     public static void main(String[] args) {
+
         class ColoredCircle implements Shape, Colored {
             private double radius;
             private String color;
@@ -41,8 +49,12 @@ public class BoundedExample<T extends Shape & Colored> {
             }
         }
 
+
         ColoredCircle circle = new ColoredCircle(5, "Red");
+
         BoundedExample<ColoredCircle> example = new BoundedExample<>(circle);
+
         example.printDetails();
+
     }
 }

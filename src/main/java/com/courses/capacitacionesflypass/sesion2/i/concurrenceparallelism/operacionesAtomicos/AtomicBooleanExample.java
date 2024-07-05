@@ -10,6 +10,7 @@ public class AtomicBooleanExample {
     private static final AtomicBoolean flag = new AtomicBoolean(false);
 
     public static void main(String[] args) {
+
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         Runnable task1 = () -> {

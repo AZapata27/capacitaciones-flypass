@@ -33,6 +33,7 @@ public class LambdaAdvancedStudentGroupingExample {
 
   
     public static void main(String[] args) {
+
         List<Student> students = Arrays.asList(
                 new Student("Alice", 85.0),
                 new Student("Bob", 65.0),
@@ -43,15 +44,21 @@ public class LambdaAdvancedStudentGroupingExample {
 
         double passingGrade = 70.0;
 
-        Predicate<Student> isPassingGrade = student -> student.getGrade() > passingGrade;
+        Predicate<Student> pasoLaMateria = student -> student.getGrade() > passingGrade;
+
+
+
         // Uso de funciones en el stream para agrupar estudiantes aprobados y reprobados
-        Map<Boolean, List<Student>> groupedByPassFail = students.stream()
-                .collect(Collectors.partitioningBy(isPassingGrade));
+        Map<Boolean, List<Student>> groupedByPassFail =
+                students.stream()
+                .collect(Collectors.partitioningBy(pasoLaMateria));
+
 
         System.out.println("Estudiantes Aprobados: " + groupedByPassFail.get(true));
-        // Output: Estudiantes Aprobados: [Student{name='Alice', grade=85.0}, Student{name='Charlie', grade=95.0}, Student{name='Eve', grade=75.0}]
 
         System.out.println("Estudiantes Reprobados: " + groupedByPassFail.get(false));
-        // Output: Estudiantes Reprobados: [Student{name='Bob', grade=65.0}, Student{name='David', grade=55.0}]
-    }
+
+
+
+         }
 }

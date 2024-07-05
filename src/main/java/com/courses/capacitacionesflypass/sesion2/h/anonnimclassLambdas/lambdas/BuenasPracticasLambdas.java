@@ -8,9 +8,10 @@ public class BuenasPracticasLambdas {
 
     public static void main(String[] args) {
 
+
         Predicate<String> isLongerThan5 = s -> s.length() > 5;
 
-        List<String> names = List.of("John", "Alice", "Bob");
+        List<String> names = List.of("John", "Aliceeee", "Bob");
 
         names.stream()
                 .filter(isLongerThan5)

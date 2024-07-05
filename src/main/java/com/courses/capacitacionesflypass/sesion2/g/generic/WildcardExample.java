@@ -6,9 +6,12 @@ import java.util.List;
 public class WildcardExample {
 
     public static void printList(List<?> list) {
+
+
         for (Object elem : list) {
             System.out.println(elem);
         }
+
     }
 
 

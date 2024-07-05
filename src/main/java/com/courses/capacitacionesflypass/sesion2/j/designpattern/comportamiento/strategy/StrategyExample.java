@@ -1,7 +1,9 @@
 package com.courses.capacitacionesflypass.sesion2.j.designpattern.comportamiento.strategy;
 
 public class StrategyExample {
+
     public static void main(String[] args) {
+
         ShoppingCart cart = new ShoppingCart();
 
         // Pagar con tarjeta de crédito

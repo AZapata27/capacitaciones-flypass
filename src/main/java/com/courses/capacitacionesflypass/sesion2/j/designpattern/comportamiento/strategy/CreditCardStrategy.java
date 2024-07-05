@@ -27,14 +27,14 @@ class PayPalStrategy implements PaymentStrategy {
 }
 
 class GooglePayStrategy implements PaymentStrategy {
-    private String email;
+    private String username;
 
-    public GooglePayStrategy(String email) {
-        this.email = email;
+    public GooglePayStrategy(String username) {
+        this.username = username;
     }
 
     @Override
     public void pay(int amount) {
-        System.out.println("Paid " + amount + " using Google Pay account " + email);
+        System.out.println("Paid " + amount + " using Google Pay account " + username);
     }
 }

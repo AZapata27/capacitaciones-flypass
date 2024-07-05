@@ -7,11 +7,12 @@ import java.util.stream.Collectors;
 
 public class FunctionExample {
 
+
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
 
         // Definir una Function para convertir nombres a mayúsculas
-        Function<String, String> toUpperCase = String::toUpperCase;
+        Function<String, String> toUpperCase = name -> name.toUpperCase();
 
         // Usar la Function para transformar la lista de nombres
         List<String> upperCaseNames = names.stream()

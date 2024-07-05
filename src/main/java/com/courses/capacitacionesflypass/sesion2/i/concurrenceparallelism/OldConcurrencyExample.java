@@ -3,6 +3,7 @@ package com.courses.capacitacionesflypass.sesion2.i.concurrenceparallelism;
 public class OldConcurrencyExample {
     public static void main(String[] args) {
         // Crear un hilo mediante una clase que implementa Runnable
+
         Runnable task = new Runnable() {
             @Override
             public void run() {
@@ -21,13 +22,14 @@ public class OldConcurrencyExample {
         Thread thread = new Thread(task);
         thread.start();
 
-        // Esperar a que el hilo termine
+
+        System.out.println("Main thread start.    thread: " + Thread.currentThread().getName());
         try {
-            thread.join();
+            Thread.sleep(2000); // Simular trabajo
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
 
-        System.out.println("Main thread finished.");
+        System.out.println("Main thread finished.   thread: "+ Thread.currentThread().getName());
     }
 }

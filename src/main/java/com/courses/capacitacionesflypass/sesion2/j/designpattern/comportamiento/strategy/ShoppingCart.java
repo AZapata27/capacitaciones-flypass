@@ -1,6 +1,7 @@
 package com.courses.capacitacionesflypass.sesion2.j.designpattern.comportamiento.strategy;
 
 class ShoppingCart {
+
     private PaymentStrategy paymentStrategy;
 
     public void setPaymentStrategy(PaymentStrategy paymentStrategy) {

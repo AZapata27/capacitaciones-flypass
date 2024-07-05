@@ -1,11 +1,9 @@
 package com.courses.capacitacionesflypass.sesion2.j.designpattern.creacionales;
 
-// Producto
 interface Animal {
     void speak();
 }
 
-// Producto concreto
 class Dog implements Animal {
     @Override
     public void speak() {
@@ -20,18 +18,17 @@ class Cat implements Animal {
     }
 }
 
-// Factory Method
+
 abstract class AnimalFactory {
+
     abstract Animal createAnimal();
 
-    // Método que usa el objeto creado
     void doSomething() {
         Animal animal = createAnimal();
         animal.speak();
     }
 }
 
-// Subclases de la fábrica
 class DogFactory extends AnimalFactory {
     @Override
     Animal createAnimal() {
@@ -48,11 +45,13 @@ class CatFactory extends AnimalFactory {
 
 // Cliente
 public class FactoryMethodExample {
+
     public static void main(String[] args) {
+
         AnimalFactory dogFactory = new DogFactory();
-        dogFactory.doSomething(); // Output: Woof!
+        dogFactory.doSomething();
 
         AnimalFactory catFactory = new CatFactory();
-        catFactory.doSomething(); // Output: Meow!
+        catFactory.doSomething();
     }
 }

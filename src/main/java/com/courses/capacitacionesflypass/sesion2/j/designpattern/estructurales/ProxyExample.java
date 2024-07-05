@@ -1,11 +1,9 @@
 package com.courses.capacitacionesflypass.sesion2.j.designpattern.estructurales;
 
-// Interfaz del sujeto
 interface Image {
     void display();
 }
 
-// Sujeto real
 class RealImage implements Image {
     private String filename;
 
@@ -24,8 +22,8 @@ class RealImage implements Image {
     }
 }
 
-// Proxy
 class ProxyImage implements Image {
+
     private RealImage realImage;
     private String filename;
 
@@ -39,15 +37,19 @@ class ProxyImage implements Image {
         if (realImage == null) {
             realImage = new RealImage(filename);
         }
+
+
         realImage.display();
+
 
         System.out.println("esto es un comportamiento adicional despues de realizar la accion principal");
     }
 }
 
-// Cliente
 public class ProxyExample {
+
     public static void main(String[] args) {
+
         Image image = new ProxyImage("test.jpg");
 
         // Carga la imagen desde el disco

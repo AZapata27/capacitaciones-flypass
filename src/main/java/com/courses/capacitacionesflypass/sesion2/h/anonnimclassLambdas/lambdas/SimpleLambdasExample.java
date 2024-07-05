@@ -13,19 +13,17 @@ public class SimpleLambdasExample {
         System.out.println(names); // Output: [Alice, Bob, John]
 
         // Lambda para filtrar nombres que empiezan con "A"
-        List<String> filteredNames = names.stream()
+        List<String> filteredNames = names
+                .stream()
                 .filter(name -> name.startsWith("A"))
-                .toList();
-
-        System.out.println(filteredNames); // Output: [Alice]
-
-
-
-        // Lambda para transformar los nombres a mayúsculas
-        List<String> upperCaseNames = names.stream()
+                .distinct()
+                .limit(2)
+                .sorted()
+                .filter(name -> name.length() < 5)
                 .map(name -> name.toUpperCase())
                 .toList();
 
-        System.out.println(upperCaseNames); // Output: [JOHN, ALICE, BOB]
+
+        System.out.println(filteredNames); // Output: [JOHN, ALICE, BOB]
     }
 }

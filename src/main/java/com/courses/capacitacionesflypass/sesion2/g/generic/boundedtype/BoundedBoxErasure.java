@@ -16,7 +16,7 @@ public class BoundedBoxErasure {
     }
 
     public static void main(String[] args) {
-        BoundedBox intBox = new BoundedBox();
+        BoundedNumberBox intBox = new BoundedNumberBox();
         intBox.setContent(10);
         System.out.println("Double Value: " + intBox.doubleValue());
     }

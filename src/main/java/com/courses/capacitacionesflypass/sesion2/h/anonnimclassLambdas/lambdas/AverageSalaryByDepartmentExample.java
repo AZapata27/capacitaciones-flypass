@@ -38,7 +38,9 @@ public class AverageSalaryByDepartmentExample {
         );
 
         // Agrupar empleados por departamento y calcular el promedio de sus salarios
-        Map<String, Double> averageSalaryByDepartment = employees.stream()
+        Map<String, Double> averageSalaryByDepartment =
+
+                employees.stream()
                 .collect(Collectors.groupingBy(
                         Employee::getDepartment,
                         Collectors.averagingDouble(Employee::getSalary)

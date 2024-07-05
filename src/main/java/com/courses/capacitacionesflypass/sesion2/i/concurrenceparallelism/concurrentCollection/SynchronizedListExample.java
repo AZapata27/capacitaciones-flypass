@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SynchronizedListExample {
+
     private final List<String> list = Collections.synchronizedList(new ArrayList<>());
 
     public void addElement(String element) {

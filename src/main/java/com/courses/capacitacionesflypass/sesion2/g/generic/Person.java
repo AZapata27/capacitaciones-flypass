@@ -1,8 +1,23 @@
 package com.courses.capacitacionesflypass.sesion2.g.generic;
 
 public class Person implements Comparable<Person> {
+
+
     private int age;
     private String name;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public Person(String name, int age) {
         this.name = name;
@@ -17,10 +32,30 @@ public class Person implements Comparable<Person> {
         return name;
     }
 
+
+
+
     @Override
     public int compareTo(Person other) {
         return Integer.compare(this.age, other.age);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public String toString() {

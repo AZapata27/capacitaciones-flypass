@@ -4,7 +4,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 public class AdvancedCompletableFutureExample {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+
         CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
             sleep(2000);
             return "Result of Future 1";
@@ -19,9 +20,6 @@ public class AdvancedCompletableFutureExample {
             return result1 + " and " + result2;
         });
 
-        combinedFuture.thenAccept(result -> {
-            System.out.println("Combined Result: " + result);
-        });
 
         // Manejo de excepciones
         combinedFuture.exceptionally(ex -> {
@@ -29,11 +27,10 @@ public class AdvancedCompletableFutureExample {
             return null;
         });
 
-        try {
-            combinedFuture.get();
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-        }
+        String resutlCombinado = combinedFuture.get();
+
+        System.out.println(resutlCombinado);
+
     }
 
     private static void sleep(int milliseconds) {
