@@ -27,6 +27,12 @@ public class Person implements Comparable<Person> {
         return "PersonLombok{name='" + name + "', age=" + age + '}';
     }
 
+
+
+
+
+
+
     public static void main(String[] args) {
         Person person1 = new Person("Alice", 30);
         Person person2 = new Person("Bob", 25);

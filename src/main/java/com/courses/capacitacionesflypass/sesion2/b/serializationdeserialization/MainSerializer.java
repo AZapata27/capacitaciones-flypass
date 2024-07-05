@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class MainSerializer {
 
     public static void main(String[] args) throws IOException {
-            simpleSystemOut();
+            //simpleSystemOut();
             byteArraySave();
 
     }
@@ -29,6 +29,7 @@ public class MainSerializer {
         // Serialización a byte[]
         byte[] serializedData;
         try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream)) {
 
             objectOutputStream.writeObject(persona);

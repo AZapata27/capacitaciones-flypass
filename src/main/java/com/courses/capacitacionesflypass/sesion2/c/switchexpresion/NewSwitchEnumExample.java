@@ -1,9 +1,11 @@
 package com.courses.capacitacionesflypass.sesion2.c.switchexpresion;
 
 public class NewSwitchEnumExample {
+
     enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }
 
     public static void main(String[] args) {
+
         Day day = Day.WEDNESDAY;
 
         String activity = switch (day) {

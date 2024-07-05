@@ -30,7 +30,7 @@ public class VarArgPersonExample {
         Person person2 = new Person("Bob", 25);
         Person person3 = new Person("Charlie", 35);
 
-        printPersonDetails(person1, person2); 
+        printPersonDetails(person1);
         // Output:
         // Name: Alice, Age: 30
         // Name: Bob, Age: 25

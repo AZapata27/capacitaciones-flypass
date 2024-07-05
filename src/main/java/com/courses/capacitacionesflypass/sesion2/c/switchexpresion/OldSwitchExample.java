@@ -2,6 +2,7 @@ package com.courses.capacitacionesflypass.sesion2.c.switchexpresion;
 
 public class OldSwitchExample {
     public static void main(String[] args) {
+
         int day = 3;
         String dayName;
 

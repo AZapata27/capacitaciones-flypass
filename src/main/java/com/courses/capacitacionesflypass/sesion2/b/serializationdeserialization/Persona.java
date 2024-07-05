@@ -1,7 +1,12 @@
 package com.courses.capacitacionesflypass.sesion2.b.serializationdeserialization;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
+@Getter
+@Setter
 public class Persona implements Serializable {
 
     private int edad;
@@ -9,7 +14,7 @@ public class Persona implements Serializable {
     private String apellido;
 
     private transient String transientAtribute;
-    private transient String datoQueNoSeDEbeSerializar;
+    private transient String datoQueNoSeDebeSerializar;
 
     public Persona(int edad, String nombre, String apellido) {
         this.edad = edad;
@@ -26,27 +31,4 @@ public class Persona implements Serializable {
                 '}';
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
 }

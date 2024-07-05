@@ -26,11 +26,15 @@ class Person {
         System.out.println("This method uses custom values for the annotation.");
     }
 
+
+
     public static void main(String[] args) throws Exception {
+
         Person person = new Person();
 
         // Procesamiento de anotaciones en tiempo de ejecución
         Method defaultMethod = person.getClass().getMethod("defaultInfo");
+
         if (defaultMethod.isAnnotationPresent(MultiValueAnnotation.class)) {
             MultiValueAnnotation defaultAnnotation = defaultMethod.getAnnotation(MultiValueAnnotation.class);
             System.out.println("Default Method Annotation - Name: " + defaultAnnotation.name() + ", Age: " + defaultAnnotation.age());

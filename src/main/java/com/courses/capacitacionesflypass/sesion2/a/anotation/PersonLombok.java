@@ -1,17 +1,17 @@
 package com.courses.capacitacionesflypass.sesion2.a.anotation;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+
+import java.util.Objects;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Data
 public class PersonLombok {
     private String name;
     private int age;
+
 }

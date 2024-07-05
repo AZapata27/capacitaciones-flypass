@@ -1,10 +1,10 @@
-package com.courses.capacitacionesflypass.sesion2.g.generic;
+package com.courses.capacitacionesflypass.sesion2.g.generic.boundedtype;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class BoundedTypeExample {
+public class BoundedTypeExampleMethods {
 
     public static <T extends Comparable<T>> T findMax(List<T> list) {
         if (list.isEmpty()) {
