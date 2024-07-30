@@ -6,19 +6,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-
 @Controller
 @ResponseBody
 public class RestControllerExample {
-
-
+    
     @RequestMapping("/json")
     @ResponseBody
     public MyObject getJson() {
         return new MyObject("value1", "value2");
     }
-
-
 
     @GetMapping
     @PostMapping
@@ -28,10 +24,6 @@ public class RestControllerExample {
     public MyObject getJsonExmaple() {
         return new MyObject("value1", "value2");
     }
-
-
-
-
 
 
 
