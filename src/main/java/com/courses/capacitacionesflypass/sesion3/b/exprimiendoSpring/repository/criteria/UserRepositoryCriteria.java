@@ -11,15 +11,5 @@ import org.springframework.transaction.annotation.Transactional;
 public interface UserRepositoryCriteria extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
 
 
-    @Transactional
-    @Modifying
-    @Query("update User u set u.username = :username where u.id = :id")
-    void updateUsernameBy(@Param("username") String username, @Param("id") Long id);
-
-    @Transactional
-    @Modifying
-    @Query("update User u set u.email = :email where u.username = :username")
-    int updateEmailByUsername(@Param("email") String email, @Param("username") String username);
-
 
 }

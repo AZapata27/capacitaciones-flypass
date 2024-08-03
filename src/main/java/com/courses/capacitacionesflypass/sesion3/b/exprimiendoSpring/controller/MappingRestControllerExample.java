@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Controller
 @ResponseBody
-public class RestControllerExample {
+public class MappingRestControllerExample {
     
     @RequestMapping("/json")
     @ResponseBody
@@ -35,16 +35,3 @@ public class RestControllerExample {
 
 
 
-@Getter
-@Setter
-class MyObject {
-    private String field1;
-    private String field2;
-
-    public MyObject(String field1, String field2) {
-        this.field1 = field1;
-        this.field2 = field2;
-    }
-
-
-}
