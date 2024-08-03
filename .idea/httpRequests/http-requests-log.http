@@ -1,0 +1,282 @@
+GET http://localhost:8080/scope/singleton
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T233631.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T233626.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T233531.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232934.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232931.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232925.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232648.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232645.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232623.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232620.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232236.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232234.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232233.200.txt
+
+###
+
+GET http://localhost:8080/scope/prototype
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232231.200.txt
+
+###
+
+GET http://localhost:8080/scope/singleton
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232223.200.txt
+
+###
+
+GET http://localhost:8080/scope/singleton
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232220.200.txt
+
+###
+
+GET http://localhost:8080/scope/singleton
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232218.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232206.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232205.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232203.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232200.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=90D43AEE844761B47B20ED6AE6A5CB30
+content-length: 0
+
+<> 2024-07-11T232158.200.txt
+
+###
+
+GET http://localhost:8080/scope/session
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T232157.200.txt
+
+###
+
+GET http://localhost:8080/scope/request
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T232148.200.txt
+
+###
+
+GET http://localhost:8080/scope/request
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T232147.200.txt
+
+###
+
+GET http://localhost:8080/scope/request
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T232143.200.txt
+
+###
+
