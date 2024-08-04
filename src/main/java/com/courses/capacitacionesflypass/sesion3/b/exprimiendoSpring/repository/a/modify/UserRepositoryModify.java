@@ -1,4 +1,4 @@
-package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.repository.modify;
+package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.repository.a.modify;
 
 import com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,12 +12,12 @@ public interface UserRepositoryModify extends JpaRepository<User, Long> {
 
     @Transactional
     @Modifying
-    @Query("update User u set u.username = :username where u.id = :id")
+    @Query("update UserLifeCycle u set u.username = :username where u.id = :id")
     void updateUsernameBy(@Param("username") String username, @Param("id") Long id);
 
     @Transactional
     @Modifying
-    @Query("update User u set u.email = :email where u.username = :username")
+    @Query("update UserLifeCycle u set u.email = :email where u.username = :username")
     int updateEmailByUsername(@Param("email") String email, @Param("username") String username);
 
 

@@ -1,4 +1,4 @@
-package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.repository.criteria;
+package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.repository.d.criteria;
 
 import java.time.LocalDateTime;
 

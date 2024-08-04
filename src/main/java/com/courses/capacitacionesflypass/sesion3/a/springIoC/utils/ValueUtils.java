@@ -1,9 +1,10 @@
 package com.courses.capacitacionesflypass.sesion3.a.springIoC.utils;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Map;
 
@@ -31,8 +32,13 @@ public class ValueUtils {
         System.out.println("List: " + myList);
 
         System.out.println("Map values: " + myMap);
-        System.out.println("User home: " + userHome);
+        System.out.println("UserLifeCycle home: " + userHome);
 
         System.out.println("Java Version Condition: " + javaVersionCondition);
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Destroying bean");
     }
 }

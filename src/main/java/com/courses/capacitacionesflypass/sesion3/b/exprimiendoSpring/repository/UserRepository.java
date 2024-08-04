@@ -18,13 +18,13 @@ public interface UserRepository extends JpaRepository<User, Long> {
     List<User> findByEmailContaining(String email);
 
     @EntityGraph(attributePaths = {"posts"})
-    @Query("select u from User u where u.username = :username")
+    @Query("select u from UserLifeCycle u where u.username = :username")
     Optional<User> getByUserNameParam(@Param("username") String username);
 
-    @Query("select u from User u where u.username = ?1 and u.email = ?2")
+    @Query("select u from UserLifeCycle u where u.username = ?1 and u.email = ?2")
     List<User> getByUserName(String username, String email);
 
 
-    @Query("SELECT u FROM User u LEFT JOIN FETCH u.posts WHERE u.id = :userId")
+    @Query("SELECT u FROM UserLifeCycle u LEFT JOIN FETCH u.posts WHERE u.id = :userId")
     Optional<User> findByIdWithPosts(@Param("userId") Long userId);
 }

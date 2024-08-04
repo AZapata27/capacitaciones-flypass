@@ -5,9 +5,7 @@ import lombok.Setter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 @Controller
-@ResponseBody
 public class MappingRestControllerExample {
     
     @RequestMapping("/json")
@@ -21,6 +19,7 @@ public class MappingRestControllerExample {
     @PutMapping
     @DeleteMapping
     @PatchMapping
+    @ResponseBody
     public MyObject getJsonExmaple() {
         return new MyObject("value1", "value2");
     }

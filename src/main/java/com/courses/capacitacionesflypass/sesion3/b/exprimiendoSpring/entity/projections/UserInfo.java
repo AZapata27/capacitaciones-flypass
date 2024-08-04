@@ -1,4 +1,6 @@
-package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.entity;
+package com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.entity.projections;
+
+import com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.entity.User;
 
 import java.time.LocalDateTime;
 

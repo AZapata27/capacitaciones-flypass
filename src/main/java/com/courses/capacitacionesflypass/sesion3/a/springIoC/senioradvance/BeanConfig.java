@@ -4,12 +4,12 @@ import com.courses.capacitacionesflypass.sesion3.a.springIoC.medium.JustSimpleCl
 import com.courses.capacitacionesflypass.sesion3.a.springIoC.senior.OtherService;
 import com.courses.capacitacionesflypass.sesion3.a.springIoC.senior.OtherServiceImplONE;
 import com.courses.capacitacionesflypass.sesion3.a.springIoC.senior.OtherServiceImplTWO;
+import jakarta.servlet.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.*;
 import java.io.IOException;
 
 @Configuration
@@ -42,11 +42,6 @@ public class BeanConfig {
     }
 
 }
-
-
-
-
-
 
 
 @Component
