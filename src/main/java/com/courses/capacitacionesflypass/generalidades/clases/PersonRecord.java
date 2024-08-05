@@ -1,6 +1,5 @@
 package com.courses.capacitacionesflypass.generalidades.clases;
 
-import javax.persistence.Entity;
 
 public record PersonRecord(String name,
                            int age) {

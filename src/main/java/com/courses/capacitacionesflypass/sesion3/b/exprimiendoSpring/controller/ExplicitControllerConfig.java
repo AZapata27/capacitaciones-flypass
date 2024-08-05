@@ -12,14 +12,14 @@ import java.lang.reflect.Method;
 public class ExplicitControllerConfig {
 
 	@Autowired
-	public void setHandlerMapping(RequestMappingHandlerMapping mapping, OwnerController handler)
+	public void setHandlerMapping(RequestMappingHandlerMapping mapping, SimpleController handler)
 			throws NoSuchMethodException {
 
 		RequestMappingInfo info = RequestMappingInfo
 				.paths("/owners/{ownerId}/user/{id}")
 				.methods(RequestMethod.GET).build();
 
-		Method method = OwnerController.class.getMethod("findPet", Long.class, Long.class);
+		Method method = SimpleController.class.getMethod("findPet", Long.class, Long.class);
 
 		mapping.registerMapping(info, handler, method);
 	}
