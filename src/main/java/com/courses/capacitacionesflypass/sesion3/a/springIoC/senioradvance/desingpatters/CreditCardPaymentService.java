@@ -7,6 +7,7 @@ public class CreditCardPaymentService implements PaymentService {
     @Override
     public Payment processPayment() {
         System.out.println("Processing payment with credit card.");
+        return new Payment();
     }
 }
 

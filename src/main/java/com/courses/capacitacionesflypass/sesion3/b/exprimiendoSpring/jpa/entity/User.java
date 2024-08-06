@@ -32,14 +32,6 @@ public class User {
     @Column(nullable = false)
     private String email;
 
-    @CreatedDate
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
-
-    @CreatedBy
-    @Column(name = "created_by")
-    private String createdBy;
-
     private boolean active;
 
 

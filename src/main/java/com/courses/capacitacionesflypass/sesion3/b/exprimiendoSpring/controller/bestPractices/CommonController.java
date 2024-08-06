@@ -69,6 +69,8 @@ public class CommonController {
     @PutMapping
     public ResponseEntity<User> createUserPut(@RequestBody User user) {
 
+        // https://adictosaltrabajo.com/2015/06/29/rest-y-el-principio-de-idempotencia/
+
         Optional<User> existingUserOpt = userRepository.findByEmail(user.getEmail());
 
         if (existingUserOpt.isPresent()) {

@@ -30,8 +30,8 @@ public class UserRepository {
     }
 
     public void save(User user) {
-        String sql = "INSERT INTO users (username, email, created_at, created_by) VALUES (?, ?, ?, ?)";
-        jdbcTemplate.update(sql, user.getUsername(), user.getEmail(), user.getCreatedAt(), user.getCreatedBy());
+        String sql = "INSERT INTO users (username, email) VALUES (?, ?)";
+        jdbcTemplate.update(sql, user.getUsername(), user.getEmail());
     }
 
     public void update(User user) {
@@ -55,8 +55,6 @@ public class UserRepository {
             author.setId(rs.getLong("user_id"));
             author.setUsername(rs.getString("username"));
             author.setEmail(rs.getString("email"));
-            author.setCreatedAt(rs.getTimestamp("created_at").toLocalDateTime());
-            author.setCreatedBy(rs.getString("created_by"));
 
             post.setAuthor(author);
             return post;
