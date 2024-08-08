@@ -7,7 +7,15 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class ExampleServicio {
 
+    private ExampleRepository exampleRepository;
+
     public void doSomething() {
         log.info("Servicio doSomething");
+    }
+
+
+
+    public void setExampleRepository(ExampleRepository exampleRepository) {
+        this.exampleRepository = exampleRepository;
     }
 }

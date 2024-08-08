@@ -3,12 +3,9 @@ package com.courses.capacitacionesflypass.sesion3.d.testing.integration;
 import com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.jpa.DemoJpaApplication;
 import com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.jpa.entity.User;
 import com.courses.capacitacionesflypass.sesion3.b.exprimiendoSpring.jpa.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;

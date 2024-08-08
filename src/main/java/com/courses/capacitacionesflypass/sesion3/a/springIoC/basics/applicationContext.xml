@@ -1,0 +1,13 @@
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="exampleRepository" class="com.courses.capacitacionesflypass.sesion3.a.springIoC.basics.ExampleRepository" />
+
+    <bean id="exampleServicio" class="com.courses.capacitacionesflypass.sesion3.a.springIoC.basics.ExampleServicio">
+        <property name="exampleRepository" ref="exampleRepository" />
+    </bean>
+</beans>
